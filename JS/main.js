@@ -1,6 +1,7 @@
 let xBolinha = 300;
 let yBolinha = 200;
 let diametro = 15; 
+let minhaRaquete = 299
 
 let velocidadeXBolinha = 7;
 let velocidadeYBolinha = 7;
