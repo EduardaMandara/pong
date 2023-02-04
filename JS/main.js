@@ -16,3 +16,7 @@ function draw() {
   xBolinha += velocidadeXBolinha;
   yBolinha += velocidadeYBolinha;
 }
+
+if (xBolinha > 150) {
+    velocidadeXBolinha : 6
+} 
