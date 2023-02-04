@@ -1,7 +1,7 @@
 let xBolinha = 300;
 let yBolinha = 200;
-let diametro = 15; 
-let minhaRaquete = 299
+let diametro = 10; 
+let minhaRaquete = 130;
 
 let velocidadeXBolinha = 7;
 let velocidadeYBolinha = 7;
@@ -17,6 +17,6 @@ function draw() {
   yBolinha += velocidadeYBolinha;
 }
 
-if (xBolinha > 150) {
+if (xBolinha >= 150) {
     velocidadeXBolinha : 6
 } 
