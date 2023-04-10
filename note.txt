@@ -1,1 +1,2 @@
-function -> a condição de uma finção não fica solta, ela fica dentro dos (parenteses). 
+function: a condição de uma função não fica solta, ela fica dentro dos (parenteses). Assim como usamos {chaves} quando queremos adicionar nossa ação. 
+Ex: if (condição/regra) então {algo acontece dependendo da minha condição ser verdadeira ou falsa}
