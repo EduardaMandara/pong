@@ -9,22 +9,35 @@ let minhaRaquete = 130;
 let velocidadeXBolinha = 6;
 let velocidadeYBolinha = 6;
 
+//Variáveis da Raquete
+let xRaquete = 5;
+let yRaquete = 150; 
+let comprimentoRaquete = 10;
+let alturaRaquete = 90; 
+
+
 function setup() {
   createCanvas(600, 400);
 }
 
 function draw() {
   background(0);
+    
+  mostraBolinha(); //chama a função que criamos lá embaixo para MOSTRAR A BOLINHA, ajudando a diminuir as coisas que estão dentro da nossa função <draw>;
   
-  mostraBolinha(); //chama a função que criamos lá embaixo para mostrar a bolinha, ajudando a diminuir as coisas que estão dentro da nossa função <draw>;
+  velocidadeBolinha(); //chama a função que criamos lá embaixo para VELOCIDADE DA BOLINHA;
   
-  velocidadeBolinha(); //chama a função que criamos lá embaixo para velocidade da bolinha, ajudando a diminuir as coisas que estão dentro da nossa função <draw>;
+  colisaoBolinha(); //chama a função que criamos lá embaixo para verificação da COLISÃO DA BOLINHA COM AS BORDAS;
   
-  colisaoBolinha(); //chama a função que criamos lá embaixo para verificação da colisão da bolinha com as bordas, ajudando a diminuir as coisas que estão dentro da nossa função <draw>;
+  mostraRaquete (); //chama a função que criamos para MOSTRAR A RAQUETE;
 }
 
 function mostraBolinha (){
   circle(xBolinha, yBolinha, diametro);
+}
+
+function mostraRaquete (){
+  rect (xRaquete, yRaquete, comprimentoRaquete, alturaRaquete)
 }
 
 function velocidadeBolinha () {
