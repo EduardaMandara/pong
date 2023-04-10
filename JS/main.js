@@ -15,8 +15,15 @@ function draw() {
   circle(xBolinha, yBolinha, diametro);
   xBolinha += velocidadeXBolinha;
   yBolinha += velocidadeYBolinha;
+
+  //Se o xBolinha for maior que a borda ou menor que 0, alterar a velocidade para o lado contrário.
+  if (xBolinha > width || xBolinha < 0) { 
+    velocidadeXBolinha *= -1
+  }; 
+
+  if (yBolinha > heighy || yBolinha< 0) {
+    velocidadeYBolinha *= -1
+  };
 }
 
-if (xBolinha >= 150) {
-    velocidadeXBolinha : 6
-} 
+ 
