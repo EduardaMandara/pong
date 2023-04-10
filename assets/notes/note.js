@@ -14,3 +14,8 @@ date ()
 title ()
 
 'Movimento minha raquete'
+
+'_____________________________________________________________________________________'
+
+var date = date;
+var title = 'string'; 
