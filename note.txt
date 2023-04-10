@@ -4,3 +4,5 @@ Ex: if (condição/regra) então {algo acontece dependendo da minha condição s
 var: width = largura e height = altura. 
 
 Usamos as condicionais para realizar uma verificação de algum aspecto do código e executar uma ação.
+
+* Diametro é 2x igual ao raio. *
