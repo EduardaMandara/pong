@@ -1,0 +1,1 @@
+function -> a condição de uma finção não fica solta, ela fica dentro dos (parenteses). 
