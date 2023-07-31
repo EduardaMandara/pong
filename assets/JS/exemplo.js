@@ -89,16 +89,27 @@ function verificaColisaoRaquete(){
 
 function verificaColisaoRaquete(x, y){
   colidiu = collideRectCircle(x, y,raqueteComprimento,raqueteAltura,
-                              xBolinha,yBolinha,raio);
+    xBolinha,yBolinha,raio);
   if (colidiu){
     velocidadeXBolinha *= -1;
   }
 }
 
+//JOGANDO SOZINHO
 function movimentaRaqueteOponente(){
   velocidadeYOponente = yBolinha - yRaqueteOponente - raqueteComprimento / 2 - 30;
   yRaqueteOponente += velocidadeYOponente
 }
+
+//JOGANDO ACOMPANHADO
+// function movimentaRaqueteOponente(){
+//     if (keyIsDown(87)){
+//         yRaqueteOponente -= 10;
+//     }
+//     if (keyIsDown(83)){
+//         yRaqueteOponente += 10;
+//     }
+// }
 
 function incluiPlacar(){
   fill(255);
